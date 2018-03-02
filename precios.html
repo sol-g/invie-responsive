@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invie - Precios</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">    <link rel="stylesheet" href="css/invie.css"/>
+  </head>
+  <body>
+    <header id="header" class="header background"> <!-- header -->
+        <div class="container">
+            <!-- logotipo -->
+            <figure class="logotipo"> 
+
+                    <!--Con el atributo srcset en las img, se pueden agregar imágenes con diferentes
+                    densidades de px. Se pone la ruta de la imagen y las densidad de px de esa imagen separadas por coma.
+                    El atributo src debe estar también, los dos atributos
+                    Con las img cargadas por blazy loading, en el atributo data-src se ponen las diferentes rutas de imagen
+                     separadas por un | (data-src="images/invie-acustica.png|images/invie-acustica2x.png")
+                     Para las imágenes cargadas como background desde el css, hay que ponerle un media querie para las imagenes
+                     con densidad de 2, ejemplo @media screen and (-webkit-min-device-pixel-ratio: 2)
+                -->
+                    <img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png 2x" width="186" height="60" alt="Invie logotipo"/>
+                </figure>
+                <span id="burguer-button" class="burguer-button icon-menu"></span>
+                <nav id="menu" class="menu"> <!-- menu -->
+            <ul>
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+                <li>
+                <a href="index.html#guitarras">Guitarras</a>
+                </li>
+                <li>
+                <a href="precios.html">Precios</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="tabla">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Precio</th>
+                        <th>Descripción</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Invie classic</td>
+                        <td>$10000</td>
+                        <td>Una guitarra muy pro</td>
+                    </tr>
+                    <tr>
+                        <td>Invie Acústica</td>
+                        <td>$40000</td>
+                        <td>Una guitarra muy pro</td>
+                    </tr>
+                    <tr>
+                        <td>Invie Acústica</td>
+                        <td>$40000</td>
+                        <td>Una guitarra muy pro</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="container">
+            <div class="contacto">
+                <img data-src="images/invie-white.png|images/invie-white2x.png" alt="logotipo blanco" />
+                <div class="info-contacto">
+                    <a href="tel:+543024456678"><strong>Telefono</strong><span>3024456678</span></a>
+                    <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+                </div>
+            </div><!--contacto-->
+            <form class="formulario">
+                <div class="datos-personales">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" required id="nombre" name="nombre"  />
+
+                    <label for="email">E-mail</label>
+                    <input type="email" required name="email" id="email" />
+                    <div class="sexo">
+                        <label for="mujer">
+                            <input type="radio" name="sexo" id="mujer" checked value="mujer" />mujer
+                        </label>
+                        <label for="hombre">
+                            <input type="radio" name="sexo" id="hombre" value="hombre" />hombre
+                        </label>
+                    </div>
+                    <div class="intereses">
+                    
+                        <label for="cotizacion">
+                            <input type="checkbox" checked name="intereses" id="cotizacion" value="cotizacion" /> Cotización
+                        </label>
+                        <label for="comentarios">
+                            <input type="checkbox" name="intereses" id="comentarios" value="comentarios" /> Comentarios
+                        </label>
+                    
+                        <label for="reclamos">
+                            <input type="checkbox" name="intereses" id="reclamos" value="reclamos" /> Reclamos
+                        </label>
+    
+                        <label for="otros">
+                            <input type="checkbox" name="intereses" id="otros" value="otros" /> Otros
+                        </label>
+                            
+                    </div><!--intereses-->
+                </div><!--datos-personales-->
+                <div class="datos-grales">
+                    <label for="consultas">Comentarios</label>
+                    <textarea name="consultas" id="consultas" cols="25" rows="7"></textarea>
+                    <input type="submit" value="enviar" class="button" />
+                </div><!--datos-grales-->
+            </form>
+        </div><!--container-->
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="js/js.js"></script>
+    </body>
+    </html>
