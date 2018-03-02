@@ -16,31 +16,21 @@ consulta.addListener(mediaQuery);
 mediaQuery();
 
 //Esta función guarda la condición: cuando se cumple o no el media query de 500px
-// function mediaQuery()
-// {
-// if(consulta.matches)
-//     {
-//     console.log('se cumplió la condición');
-//     $burguerButton.addEventListener('touchstart', toggleMenu);
-//     //$guitarras.addEventListener('touchstart', toggleMenu);
+function mediaQuery()
+{
+if(consulta.matches)
+    {
+    console.log('se cumplió la condición');
+    $burguerButton.addEventListener('click', toggleMenu);
+    $guitarras.addEventListener('click', toggleMenu);
     
-//     }
-// else
-//     {
-//     console.log('no se cumplió la condición, la resolución es mayor a 500');
-//     $burguerButton.removeEventListener('touchstart', toggleMenu);
+    }
+else
+    {
+    console.log('no se cumplió la condición, la resolución es mayor a 500');
     
-//     }
-// }
-
-function mediaQuery() {
-	if (consulta.matches) {
-		console.log("cumple resolución, es < 500px");
-		$burguerButton.addEventListener('click', toogleMenu);
-		$guitarras.addEventListener('click', toogleMenu);
-	} else {
-		console.log("no cumple resolución, es > 500px");
-	}
+    
+    }
 }
 
 //Esta función le agrega y le saca la clase active. Es lo que hace que aparezca o desaparezca el menú
